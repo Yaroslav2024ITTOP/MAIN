@@ -5,11 +5,50 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <style>
-        
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-
+    <h1>HTML Tutorial</h1>
+    <h2>What is HTML?</h2>
+    
+    Hype rtext Markup Language (HJ.MU is the standard markup language for creating web pages and web
+    applications.
+    Web browsers receive J:UM.L documents from a web server or from local storage and render the documents
+    into multimedia web pages. HTML describes the structure of a web page semantically and originally
+    included cues for the appearance of the document.
+    HI.Mt elements are the building blocks of HIMJ .. pages. With HIM.~ constructs, images and other objects
+    such as interactive forms may be embedded into the rendered page. HTMi,, provides a means to create
+    structu red documents by denoting structural semantics for text such as headings, paragraphs, lists, links,
+    quotes and other items. HI.Ml elements are delineated by tags, written using angle brackets. Tags such as
+    <img /> and <input/> directly introduce content into the page. Other tags such as <p> surround and
+    provide information about document text and may include other tags as sub-elements. Browsers do not
+    display the HTML tags, but use them to interpret the content of the page.
+    <h2>Markup</h2>
+    HTM~ markup consists of several key components, including those called lug!> (and thei1 utt,ilJllle!>),
+    character-based data types, character references and entity references. HIM~ tags most commonly come in
+    pai1 s like <h1 > and </h1 >, although some I epr esent empty elements and so aI e unpai,ed, fo1 example
+    <img> . The first tag in such a pair is the start tag, and the second is the end tag (they are also called opening
+    togs and closing tags).
+    Another important component is the J:tIM~ document type declaration, which triggers standards mode
+    rendering.
+    The following is an example of the classic "Hello, World!" program:
+    < I OOCTYPE html>
+    <html>
+    <head>
+    <title>This is a title</title>
+    </head>
+    <body>
+    <p>Hello world I </p>
+    </body>
+    </html>
+    Tag,: COdmgScnpung head HTML lntr0duct1on to HTML l an<ltng UntS semanucs Strucwre Te,ct
+    ,[\
 </body>
 
 </html>
