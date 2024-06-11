@@ -40,11 +40,60 @@
     }
     td, th {
         border: 1px black solid;
+
     }
+    
+    <style type="text/css">
+.table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	overflow: hidden;
+}
+.table th, .table td {
+	border: 1px solid #888;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+}
+.table th, .table td {
+	border: 1px solid #888;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+}
+.table td:hover {
+	background: #fffabe;
+}
+
+.table td:hover:before { 
+	background-color: #eee;
+	content: '';  
+	height: 100%;
+	left: -5000px;
+	position: absolute;  
+	top: 0;
+	width: 10000px;   
+	z-index: -2;        
+}
+
+.table td:hover:after { 
+	background-color: #eee;
+	content: '';  
+	height: 10000px;    
+	left: 0;
+	position: absolute;  
+	top: -5000px;
+	width: 100%;
+	z-index: -1;        
+}
+</style>
 </style>
 </head>
 <body>
-        <table class="Table-1">
+        <table class="table" class="Table-1">
         <tr>
             <th colspan="2">Header 1</th>
             <th>Header 2</th>
