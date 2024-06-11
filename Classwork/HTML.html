@@ -3,10 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title></title>
+<title>Table practice</title>
 <style>
+    table {
+        font-size:500%;
+        border-color: brown;
+        border-style: double;
+        border-collapse: collapse;
+    }
+    tr {
+        border-color: black;
+        border-style: dashed;
+    }
+    td, th {
+        border-style:dotted;
+        border-color: blueviolet;
+    }
+    tr:nth-child(2n+1) {
+        background-color:aqua;
+    }
+    tr:nth-child(2n) {
+        background-color: yellowgreen;
+    }
+    tr:first-child {
+        background-color:rgb(255, 0, 140);
+    }
+    tr:last-child {
+        background-color:rgb(255, 94, 0);
+    }
 </style>
 </head>
 <body>
+    <th>wdawdaw
+        <td>Header 1</td>
+        <td>Header 2</td>
+    </th>
+
+    <table>Таблица
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 2</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <td>Data 2</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <td>Data 2</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <td>Data 2</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <td>Data 2</td>
+            <td>Data 2</td>
+        </tr>
+    </table>
 </body>
 </html>
