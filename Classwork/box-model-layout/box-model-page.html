@@ -4,13 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOX MODEL Page</title>
+    <style>
+        * {
+            border: 1px solid black;
+            font-display:i;
+        }
+        header {
+            background-color: aquamarine;
+            text-align: center;
+        }
+        aside.left {
+            background-color: rgb(44, 214, 29);
+            text-align: center;
+            float:left;
+        }
+        aside.right {
+            background-color: rgb(214, 29, 205);
+            text-align: center;
+            float:right;
+        }
+        footer {
+            background-color: rgb(202, 214, 29);
+            text-align: center;
+            clear:left;
+        }
+        section {
+            background-color: rgb(214, 97, 29);
+            text-align: center;
+        }
+        aside, main {
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Загаловок страницы</h1>
     </header>
-    <aside>
+    <aside class="left">
         Левая боковая панель
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
     </aside>
     <main>
         <section>
@@ -18,8 +56,15 @@
         <p>Описание и текст раздела</p>
         </section>
     </main>
-    <aside>
+    <aside class="right">
         Правая боковая панель
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    
     </aside>
     <footer>
         &copy;Все права защищены
