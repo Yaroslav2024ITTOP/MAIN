@@ -25,8 +25,18 @@
         main {
             padding:5%;
         }
-        section {
-            display: inline-block;         
+        .section-left {
+            display:inline-block;
+            /* padding-right:20%; */
+            font-size:larger;
+            width: 47%;
+            margin-right: 2%;
+        }
+        .section-right {
+            display:inline-block;
+            /* padding-right:5%; */
+            font-size:larger;
+            width: auto;
         }
         .div1 {
             line-height: 0%;
@@ -40,11 +50,14 @@
             text-decoration:underline dotted black;
         }
         img {
-            display:inline-block;
-            float:inline-end;
+            /* display:inline-block; */
+            float:right;
             user-select: none;
             padding: 1px;
+        }
+        .clear-right{
             clear:right;
+
         }
     </style>
 </head>
@@ -56,11 +69,11 @@
         <h3>for students</h3>
     </header>
     <main>
-        <section>
+        <section class="section-left">
             <h4>About Us</h4>
             <div class="div1">
                 <img src="youtube.jpg">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. ID unde</p>
+                <p class="clear-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. ID unde</p>
                 <p>molitia quas quisquam atque molestiae eos, tempore, rerum</p>
                 <p>cum dolorem, ullam aperiam rem ventatis totam, nulla hic quam.</p>
                 <p>Est, iste.</p>
@@ -74,7 +87,7 @@
                 <p>aliquid!</p>
             </div>
         </section>
-        <section>
+        <section class="section-right">
             <h4>Our mission</h4>
             <div class="div1">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dicta,earum</p>
