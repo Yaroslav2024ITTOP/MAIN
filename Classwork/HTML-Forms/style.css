@@ -2,3 +2,6 @@ form {
     border: 1px solid black;
     background-color: aquamarine;
 }
+input[type="submit"]{
+    background-color: blueviolet;
+}
