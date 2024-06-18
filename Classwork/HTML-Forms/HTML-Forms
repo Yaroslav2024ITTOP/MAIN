@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form practice</title>
     <style>
         
@@ -10,6 +12,11 @@
     </header>
 </head>
 <body>
-  
+    <form action="/sign-up" method="post">
+        <lebel for="name">Введите имя:</lebel>
+        <input type="text" id="username" name="username"/>
+        <input type="submit" value="Сохранить"/>
+
+    </form>
 </body>
 </html>
