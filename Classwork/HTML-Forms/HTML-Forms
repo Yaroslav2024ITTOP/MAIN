@@ -31,6 +31,9 @@
                 <input type="radio" id="formale" value="formale"/>
                 <label for="formale">женский</label>
             </li>
+            <li>
+                <input type="submit">
+            </li>
         </ul>
 
     </form>
