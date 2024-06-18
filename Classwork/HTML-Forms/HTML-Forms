@@ -12,9 +12,11 @@
     </header>
 </head>
 <body>
-    <form action="/sign-up" method="post">
-        <lebel for="name">Введите имя:</lebel>
+    <form action="search" method="post">
+        <lebel for="name">Введите имя: </lebel>
         <input type="text" id="username" name="username"/>
+        <lebel for="password">Введите пароль: </lebel>
+        <input type="text" id="password" name="password"/>
         <input type="submit" value="Сохранить"/>
 
     </form>
