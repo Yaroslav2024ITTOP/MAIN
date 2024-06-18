@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form practice</title>
     <style>
-        
+        form {
+            border: 1px solid black;
+            background-color: aquamarine;
+        }
     </style>
     <header>
         
@@ -24,15 +27,23 @@
             </li>
             <li>
                 <p>Пол: </p>
-                <input type="radio" id="male" value="male"/>
+                <input type="radio" id="male" value="male" name="sex"/>
                 <label for="male">мужской</label>
             </li>
             <li>
-                <input type="radio" id="formale" value="formale"/>
+                <input type="radio" id="formale" value="formale" name="sex"/>
                 <label for="formale">женский</label>
             </li>
             <li>
-                <input type="submit">
+                <input type="checkbox" name="" id="checkbox"/>
+                <lebel for="my-checkbox">Запомнить</lebel>
+
+            </li>
+            <li>
+                <input type="submit"/>
+            </li>
+            <li>
+                <input type="reset"/>
             </li>
         </ul>
 
