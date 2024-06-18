@@ -13,17 +13,17 @@
     <form action="search" method="post">
         <ul style="list-style: none;">
             <li>
-                <lebel for="name">Введите имя: </lebel>
+                <label for="name">Введите имя: </lebel>
                 <input type="text" id="username" name="username"/>
             </li>
             <li>
-                <lebel for="password">Введите пароль: </lebel>
+                <label for="password">Введите пароль: </lebel>
                 <input type="text" id="password" name="password"/>
             </li>
             <li>
                 <p>Пол: </p>
-                <input type="radio" id="male" value="male" name="sex"/>
                 <label for="male">мужской</label>
+                <input type="radio" id="male" value="male" name="sex"/>
             </li>
             <li>
                 <input type="radio" id="formale" value="formale" name="sex"/>
@@ -31,7 +31,7 @@
             </li>
             <li>
                 <input type="checkbox" name="" id="checkbox"/>
-                <lebel for="my-checkbox">Запомнить</lebel>
+                <label for="my-checkbox">Запомнить</lebel>
 
             </li>
             <li>
@@ -44,10 +44,15 @@
 
     </form>
     <form action="" method="get">
-        <select name="my-select" id="my-select">
+        <li>
+            <label for="my-select">Choose option(s):</label>
+            <select name="my-select" id="my-select" multiple>
             <option value="">option 1</option>
-            <option value="">option 2</option>
-        </select>
+            <option value="" selected>option 2</option>
+            </select>
+        </li>
+        <label for="comments">Enter your comments:</label>
+        <textarea name="comments" id="comments"></textarea>
     </form>
     <form action="/action_page.php">
         <label for="cars">Choose a car:</label>
