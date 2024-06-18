@@ -13,11 +13,25 @@
 </head>
 <body>
     <form action="search" method="post">
-        <lebel for="name">Введите имя: </lebel>
-        <input type="text" id="username" name="username"/>
-        <lebel for="password">Введите пароль: </lebel>
-        <input type="text" id="password" name="password"/>
-        <input type="submit" value="Сохранить"/>
+        <ul style="list-style: none;">
+            <li>
+                <lebel for="name">Введите имя: </lebel>
+                <input type="text" id="username" name="username"/>
+            </li>
+            <li>
+                <lebel for="password">Введите пароль: </lebel>
+                <input type="text" id="password" name="password"/>
+            </li>
+            <li>
+                <p>Пол: </p>
+                <input type="radio" id="male" value="male"/>
+                <label for="male">мужской</label>
+            </li>
+            <li>
+                <input type="radio" id="formale" value="formale"/>
+                <label for="formale">женский</label>
+            </li>
+        </ul>
 
     </form>
 </body>
