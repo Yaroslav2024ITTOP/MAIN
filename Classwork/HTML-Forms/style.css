@@ -1,8 +1,9 @@
 form {
     border: 1px solid black;
-    background-image: url(sushi.jpg), url(sushi.jpg), ;
-    background-size:auto;
-    background-repeat: none;
+    background-image: url(sushi2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
 }
 input[type="submit"]{
     background-color: blueviolet;
