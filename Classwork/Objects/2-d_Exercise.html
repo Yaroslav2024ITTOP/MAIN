@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Machine</title>
+    <script>
+        function PrintMachine(fontSize, fontColor, fontFamily){
+            this.fontSize = fontSize;
+            this.fontColor = fontColor;
+            this.fontFamily = fontFamily;
+
+            this.print = function(text){
+                let output = `<p style = "color: green">${text}</p>`;
+
+                document.write(output);
+            }
+        }
+        
+    </script>
+</head>
