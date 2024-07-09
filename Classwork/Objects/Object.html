@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Object Practice</title>
     <script>
+        function User(firstName, lastName, age, city){
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+            this.city = city;
+        }
+
         let user = {
             firstName: "Tom",
             lastName: "Adams",
             age: 25,
             city: "New York",
-            profession: "manager",
-       }
+        }
        document.write(user.firstName + " " + user.lastName);
        document.write("</br>");
        document.write(`${user.firstName} lives in ${user.city}`);
