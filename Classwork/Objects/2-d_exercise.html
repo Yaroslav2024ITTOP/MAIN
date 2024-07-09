@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Machine</title>
+    <script>
+        class NewsInfo {
+            constructor(title, mainText, tags, date) {
+                this.title = title;
+                this.mainText = mainText;
+                this.tags = tags;
+                this.date = date;
+            }
+            print(text) {
+                document.write(`<span style="font-size:${this.size}; color:${this.color}; font-family:${this.family};">${text}</span>`);
+            }
+        }
+      
+        let myMachine =  new NewsInfo("Новость дня!!!", "В Саратове похищен асфальт!", "#Новость #Саратов #свежие новости", "09/07/2024");
+        myMachine.print("sdghdkjfbvdhfjvbdkhg");
+
+        
+    </script>
+</head>
