@@ -10,15 +10,24 @@
             this.lastName = lastName;
             this.age = age;
             this.city = city;
-        }
-        let user = new User("Anne", "Tompson", 30, "New York")
+            this.getName = function () {
+                let name = `${text} ${this.firstName} ${this.lastName}`;
+                //let name = text + this.firstName + " " + this.lastName;
+                return name;
 
-        // let user = {
-            //firstName: "Tom",
-            //lastName: "Adams",
-            //age: 25,
-            //city: "New York",
-        //}
+            }
+        }
+        let user1 = new User("Anne", "Tompson", 30, "New York");
+        let name = user.getName();
+
+
+        let user2 = new User("Kate", "Simpson", 20, "Washington");
+
+        let userfirstName1 = "awafdawf";
+        let userlasttName1 = "awafdawf";
+        let age1 = "awafdawf";
+        let city1 = "awafdawf";
+
        document.write(user.firstName + " " + user.lastName);
        document.write("</br>");
        document.write(`${user.lastName} lives in ${user.city}`);
