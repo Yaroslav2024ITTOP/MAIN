@@ -22,6 +22,9 @@
             font-weight: normal;
             font-size: smaller;
         }
+        .h4 {
+            float: unset;
+        }
         main {
             padding:5%;
         }
@@ -45,7 +48,7 @@
             display:block;
             padding-right:5%; 
             font-size:larger;
-            float:inline-end;
+            float:right;
             text-align:justify;
             width: 45%;
             box-sizing: border-box;
@@ -61,30 +64,36 @@
         h4 {
             text-decoration:underline dotted black;
         }
-        .container {
+        .container1 {
             padding: 0px;
             float:inline-start;
             border-top-right-radius: 25px;
-            border: 2px solid rgba(165, 42, 42, 0.459);
+            border: 2px solid rgb(161,114,96);
             height: 100px;
             width: 150px;
-            vertical-align:bottom;
-            float:inline;
-        }
-        .container1 {
-            background-color: orange;
+            background-color: rgb(255,104,37);
+            
         }
         .p1 {
             border-top-right-radius: 25px;
-            border: 1px solid #ffc400fa;
-            height: 20%;
-            width: 80%;
+            border: 1px solid rgb(255,206,0);
             text-align: left;
-            background-color: #ffc400fa;
+            background-color: rgb(255,206,0);
             border-bottom-right-radius: 25px;
             font-size:x-small;
+            font-weight:700;
+            padding: 1% 30% 1% 20%;
+            margin-top: 10%;
+        }
+        .p2 {
+            font-weight:600;
+            color:white;
+            text-align: center;
             vertical-align: middle;
-
+            line-height: 60px;
+            padding-left: 5%;
+            padding-right: 5%;
+            
         }
     </style>
 </head>
@@ -129,11 +138,13 @@
                 libero non repudiandae tempora, omnis veritatis.</p>     
             </div> 
         </section>
-        <h4>Popular Courses</h4>
-        <conteiner1 class="container">
-            <p class="p1">TOP SALES</p>
-            <p>The Web Developer</p>
-        </conteiner1>
+        <section>
+            <h4 class="h4">Popular Courses</h4>
+            <conteiner class="container1">
+                <span class="p1">TOP SALES</span>
+                <span class="p2">The Web Developer</span>
+            </conteiner>
+        </section>
 
     </main>
     <footer>
