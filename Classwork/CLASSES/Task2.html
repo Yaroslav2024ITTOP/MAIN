@@ -6,7 +6,56 @@
     <title>Task 2</title>
     <script>
         class Shape{
-            constructor(){
+            constructor(a) {
+                this.a = a;
+            }
+            info() {
+                return `a = ${a}`;
+            }
+            area() {
+                return undefined;
+            }
+            perimeter() {
+                return undefined;
+            }
+        }
+        class Square extends Shape {
+            area() {
+                return this.a ** 2;
+
+            }
+            perimeter() {
+                return this.a * 4;
+
+            }
+
+        }
+        class Rectangle extends Shape {
+            constructor(a, b) {
+                super(a);
+                this.b = b;
+            }
+            info() {
+                return super.info() + `\n b= ${this.b}`;
+            }
+            area() {
+                return ;
+
+            }
+            perimeter() {
+                return this.a * 4;
+
+            }
+
+        }
+        class Triangle extends Shape {
+            info() {
+                return `a = ${a}`;
+            }
+            area() {
+
+            }
+            perimeter() {
 
             }
 
