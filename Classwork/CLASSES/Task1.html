@@ -22,20 +22,16 @@
             }
             showBtn() {
                 //вывести кнопку со стилями
-                document.write(`<button style = "width: ${this.width}px; height: ${this.height}px">${this.text}</button>`);
+                document.write(`<button style = "width: ${this.width}px; height: ${this.height}px; background-color: ${this.color}">${this.text}</button>`);
             }
         }
-        let Button = new Button(70, 20, "Cancel");
-        Button.showBtn();
+        let button = new Button(70, 20, "Cancel");
+        button.showBtn();
 
-        let BootstrapButton = new BootstrapButton(100, 40, "StyledButton")
+        let bootstrapButton = new BootstrapButton(100, 40, "StyledButton");
+        bootstrapButton.showBtn();
     </script>
 </head>
 <body>
-    <botton class="Button">
-        Button
-    </botton>
-    <button class="BootstrapButton">
-        BootstrapButton
-    </button>
+    
 </body>
