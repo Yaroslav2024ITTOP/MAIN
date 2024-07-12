@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <script>
+        class Button {
+            constructor(width, height, text) {
+                this.width = width;
+                this.height = height;
+                this.text = text;
+            }
+            showBtn() {
+                //вывести кнопку на экран с помощью тега button, используя document.write()
+            }
+        }
+        class BootstrapButton extends Button{
+            constructor(width, height, text, color) {
+                super(width, height, text);
+                this.color = color;
+            }
+            showBtn() {
+                //вывести кнопку со стилями
+            }
+        }
+        let button = new Button(70, 20, "Cancel");
+        button.showBtn();
+
+        let BootstrapButton = new BootstrapButton(100, 40, "StyledButton")
+    </script>
+</head>
+<body>
+</body>
