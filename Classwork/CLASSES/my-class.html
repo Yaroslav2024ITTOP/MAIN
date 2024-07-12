@@ -17,14 +17,20 @@
                 alert("Кофе готовится");
             }
             info() {
-                alert(`Цена: ${this.price}`);
+                alert(`
+                Название: ${this.name}
+                Объём: ${this.volume} ml
+                Цена: ${this.price} rub                
+                `);
             }
         }
         class Americano extends Coffee {
+            // переопределение родительского метода
             make(){
                 alert("Американо готовится!");
             }
         }
+
         // let coffee1 = new Coffee("coffee1", 100, 150);
         // coffee1.make();
         // coffee1.info();
@@ -32,6 +38,39 @@
         let americano = new Americano("americano", 100, 159);
         americano.info();
         americano.make();
+
+        class Latte extends Coffee {
+            constructor(name, volume, price, milk) {
+                super(name, volume, price);
+                this.milk = milk;
+            }
+            make(){
+                alert("Ваш Латте готовится!")
+            }
+            info() {
+                let information = super.info();
+                information=information + `\n \t Количество молока: ${this.milk} ml`;
+                // Название: ${this.name}
+                // Объём: ${this.volume} ml
+                // Цена: ${this.price} rub 
+                // Количество молока: ${this.milk} ml               
+                // `;
+                return information;
+            }
+        }
+        let Latte = new Latte("Latte", 150, 200);
+        alert(latte.info());
+        latte.make();
+        class LatteType1 extends Latte {
+            constructor(name, volume, price, milk, myarg){
+                super(name, volume, price, milk);
+                this.myarg = myarg;
+            }    
+        }
+        let LatteType1 = new LatteType1("LatteType1", 150, 200, 50, "myarg");
+        alert(LatteType1.info());
+        LatteType1.make();
+
     </script>
 </head>
 <body>
