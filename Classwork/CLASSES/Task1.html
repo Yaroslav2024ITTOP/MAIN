@@ -25,14 +25,17 @@
                 document.write(`<button style = "width: ${this.width}px; height: ${this.height}px">${this.text}</button>`);
             }
         }
-        let button = new Button(70, 20, "Cancel");
-        button.showBtn();
+        let Button = new Button(70, 20, "Cancel");
+        Button.showBtn();
 
         let BootstrapButton = new BootstrapButton(100, 40, "StyledButton")
     </script>
 </head>
 <body>
-    <botton>
-        fwdfawf
+    <botton class="Button">
+        Button
     </botton>
+    <button class="BootstrapButton">
+        BootstrapButton
+    </button>
 </body>
