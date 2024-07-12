@@ -16,10 +16,22 @@
             make() {
                 alert("Кофе готовится");
             }
-            
+            info() {
+                alert(`Цена: ${this.price}`);
+            }
         }
-        let coffee1 = new Coffee("coffee1", 100, 150);
-        coffee1.make();
+        class Americano extends Coffee {
+            make(){
+                alert("Американо готовится!");
+            }
+        }
+        // let coffee1 = new Coffee("coffee1", 100, 150);
+        // coffee1.make();
+        // coffee1.info();
+
+        let americano = new Americano("americano", 100, 159);
+        americano.info();
+        americano.make();
     </script>
 </head>
 <body>
