@@ -12,7 +12,7 @@
                 this.text = text;
             }
             showBtn() {
-                //вывести кнопку на экран с помощью тега button, используя document.write()
+                document.write(`<button style = "width: ${this.width}px; height: ${this.height}px">${this.text}</button>`);
             }
         }
         class BootstrapButton extends Button{
@@ -22,15 +22,17 @@
             }
             showBtn() {
                 //вывести кнопку со стилями
+                document.write(`<button style = "width: ${this.width}px; height: ${this.height}px">${this.text}</button>`);
             }
         }
         let button = new Button(70, 20, "Cancel");
         button.showBtn();
 
         let BootstrapButton = new BootstrapButton(100, 40, "StyledButton")
-        const button = document.createElement('button');
-        document.body.appendChild(button);
     </script>
 </head>
 <body>
+    <botton type="button">
+        fwdfawf
+    </botton>
 </body>
