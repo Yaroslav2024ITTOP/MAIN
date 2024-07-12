@@ -7,6 +7,9 @@
     <script>
         class Shape{
             #name = "some shape";
+            get name() {
+                return this.#name;
+            }
             constructor(a) {
                 this.a = a;
             }
