@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My class</title>
     <script>
-        let coffee1 = new Coffee("coffee1", 100, 150);
-        coffee1.make();
         
+
         class Coffee {
             constructor(name, volume, price) {
                 this.name = name;
@@ -17,11 +16,10 @@
             make() {
                 alert("Кофе готовится");
             }
-            method2() { ... }
-            method3() { ... }
-  ...
-}
-        
+            
+        }
+        let coffee1 = new Coffee("coffee1", 100, 150);
+        coffee1.make();
     </script>
 </head>
 <body>
