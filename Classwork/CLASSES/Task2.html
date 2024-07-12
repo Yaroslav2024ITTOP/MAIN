@@ -6,7 +6,7 @@
     <title>Task 2</title>
     <script>
         class Shape{
-            #name = "some shape";
+            #name;
             get name() {
                 return this.#name;
             }
@@ -34,6 +34,9 @@
             perimeter() {
                 return this.a * 4;
 
+            }
+            info() {
+                return `a = ${this.a}`;
             }
 
         }
@@ -68,11 +71,12 @@
 
         }
         let shape = new Shape(12);
-        console.log(shape.a);
-        console.log(shape.name);
-
-        shape.name = "this shape";
-        console.log(shape.name);
+        let square = new Square(5);
+        square.name = "Square";
+        alert(square.name);
+        alert(square.info());
+        alert(square.area());
+        alert(square.perimeter());
     </script>
 </head>
 <body>
