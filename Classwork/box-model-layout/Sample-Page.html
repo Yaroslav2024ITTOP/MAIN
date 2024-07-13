@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Page</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         header {
             margin: 3px;
             padding: 3px;
@@ -22,78 +26,102 @@
             font-weight: normal;
             font-size: smaller;
         }
+
         .h4 {
             float: unset;
         }
+
         main {
-            padding:5%;
+            padding: 5%;
         }
+
         .section-left {
-            display:block;
-            padding-right:1%;
-            font-size:larger;
+            display: block;
+            padding-right: 1%;
+            font-size: larger;
             width: 45%;
             margin-right: 2%;
-            float:inline-start;
-            text-align:left;
+            float: inline-start;
+            text-align: left;
             /* height: 30px; */
             box-sizing: border-box;
         }
+
         img {
-            float:right;
+            float: right;
             user-select: none;
             padding: 20px;
         }
+
         .section-right {
-            display:block;
-            padding-right:5%; 
-            font-size:larger;
-            float:right;
-            text-align:justify;
+            display: block;
+            padding-right: 5%;
+            font-size: larger;
+            float: right;
+            text-align: justify;
             width: 45%;
             box-sizing: border-box;
         }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
         .div1 {
             line-height: auto;
             margin-bottom: auto;
         }
+
         .div2 {
             line-height: auto;
             margin-bottom: auto;
         }
+
         h4 {
-            text-decoration:underline dotted black;
+            text-decoration: underline dotted black;
         }
+
+        .text-center {
+            text-align: center;
+        }
+
         .container1 {
             padding: 0px;
-            float:inline-start;
+            float: inline-start;
             border-top-right-radius: 25px;
-            border: 2px solid rgb(161,114,96);
+            border: 2px solid rgb(161, 114, 96);
             height: 100px;
             width: 150px;
-            background-color: rgb(255,104,37);
-            
+            background-color: rgb(255, 104, 37);
+
         }
+
         .p1 {
             border-top-right-radius: 25px;
-            border: 1px solid rgb(255,206,0);
+            border: 1px solid rgb(255, 206, 0);
             text-align: left;
-            background-color: rgb(255,206,0);
+            background-color: rgb(255, 206, 0);
             border-bottom-right-radius: 25px;
-            font-size:x-small;
-            font-weight:700;
+            font-size: x-small;
+            font-weight: 700;
             padding: 1% 30% 1% 20%;
             margin-top: 10%;
         }
+
         .p2 {
-            font-weight:600;
-            color:white;
+            font-weight: 600;
+            color: white;
             text-align: center;
             vertical-align: middle;
             line-height: 60px;
             padding-left: 5%;
             padding-right: 5%;
-            
+        }
+
+        .p3 {
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -105,45 +133,45 @@
         <h3>for students</h3>
     </header>
     <main>
-        <section class="section-left">
-            <h4>About Us</h4>
-            <div class="div1">
-                <img src="youtube.jpg">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. ID unde
-                molitia quas quisquam atque molestiae eos, tempore, rerum
-                cum dolorem, ullam aperiam rem ventatis totam, nulla hic quam.
-                Est, iste.</p>
-            
-            </div>
-        
-            <div class="div2">
+        <section class="clearfix">
+            <div class="section-left">
+                <h4>About Us</h4>
+                <div class="div1">
+                    <img src="youtube.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. ID unde
+                        molitia quas quisquam atque molestiae eos, tempore, rerum
+                        cum dolorem, ullam aperiam rem ventatis totam, nulla hic quam.
+                        Est, iste.</p>
+
+                </div>
+
                 <p>Delenit, aliquam perferendis iusto fugit, a eveniet dolores maiores dignissimos
-                ipsa tempore atque voluptate neque animi natus. Laboriosam, vitae
-                recusandae facere corporis dolores odio voluptatem placeat at sequi! A,
-                aliquid!</p>
+                    ipsa tempore atque voluptate neque animi natus. Laboriosam, vitae
+                    recusandae facere corporis dolores odio voluptatem placeat at sequi! A,
+                    aliquid!</p>
             </div>
-        </section>
-        <section class="section-right">
-            <h4>Our mission</h4>
-            <div class="div1">
+            <div class="section-right">
+                <h4>Our mission</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dicta,earum
-                dolorem hic doloremque voluptates?</p>     
-            </div>
-            <div class="div1">
+                    dolorem hic doloremque voluptates?</p>
                 <p>Sequi libero ipsum autem quos quod earum dolorem ipsa ad officiis. Aliquam
-                hic est ipsam!</p>     
-            </div>     
-            <div class="div1">
+                    hic est ipsam!</p>
                 <p>Odio molestias doloribus, explicabo? Optio, delectus. Adipisci expedita alias
-                libero non repudiandae tempora, omnis veritatis.</p>     
-            </div> 
+                    libero non repudiandae tempora, omnis veritatis.</p>
+            </div>
         </section>
         <section>
-            <h4 class="h4">Popular Courses</h4>
-            <conteiner class="container1">
+            <h4 class="h4 text-center">Popular Courses</h4>
+            <div class="container1">
                 <span class="p1">TOP SALES</span>
                 <span class="p2">The Web Developer</span>
-            </conteiner>
+                <p>wasda</p>
+            </div>
+            <div class="container1">
+                <span class="p1">TOP SALES</span>
+                <span class="p2">The Web Developer</span>
+                <p>wasda</p>
+            </div>
         </section>
 
     </main>
