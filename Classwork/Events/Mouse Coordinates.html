@@ -19,10 +19,14 @@
     <input type="button" id="button" value="Click"/>
     <script>
         let button = document.getElementById("button");
-        button.addEventListener("mouseup", clickHandler, false)
+        button.addEventListener("mousedown", clickHandler, false)
+        button.addEventListener("contextmenu", contextHadler);
         function clickHandler(event) {
             console.log(event.button);
-
+        
+        }
+        function contextHadler(event) {
+            event.preventDefault();
         }
     </script>
 </body>
