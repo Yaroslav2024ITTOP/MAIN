@@ -6,17 +6,23 @@
     <title>Events Practice</title>
 </head>
 <body>
-    <div id="container">
-
-    </div>
-
+    <div id="container" onmouseover= "mouseOverHandler()" onmouseout= "this.style.color='black'"></div>
+    <input type="button" value="Click me" onclick="clickHandler()" >
+    
     <script>
        let div = document.getElementById("container");
        div.innerHTML = "<p>wianddw</p>";
        div.innerText = "wdawd2222";
        div.style.backgroundColor ="yellow";
-       div.style.padding = "5%";
+       div.style.padding = "5px";
        div.style.width = "100%";
+
+    function mouseOverHandler() {
+        div.style.color = "white";
+    }
+    function clickHandler() {
+        div.style.backgroundColor = "pink"
+    }
     </script>
 </body>
 </html>
