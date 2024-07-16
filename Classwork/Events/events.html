@@ -33,9 +33,13 @@
     }
     let paragraph = document.getElementById("text");
     paragraph.addEventListener("click", textClickHandler, false);
+    paragraph.addEventListener("click",textClickHandler2, false);
 
     function textClickHandler() {
         paragraph.style.fontSize = "20px";
+    }
+    function textClickHandler2() {
+        alert("2nd click handler");
     }
     </script>
 
