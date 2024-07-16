@@ -8,23 +8,39 @@
         #container{
             width: 100%;
             height: 500px;
+            background-color: bisque;
         }
     </style>
     
 </head>
 <body>
     <div id="container">
-
+        <p id="coordinates"></p>
+        <p id="mouseinfo"></p>
     </div>
-    <input type="button" id="button" value="Click"/>
+    <!-- <input type="button" id="button" value="Click"/> -->
     <script>
-        let button = document.getElementById("button");
-        button.addEventListener("mousedown", clickHandler, false)
-        button.addEventListener("contextmenu", contextHadler);
-        function clickHandler(event) {
-            console.log(event.button);
-        
+        let container = document.getElementById("container");
+        container.addEventListener("mousemove", moveInfo);
+        container.addEventListener("mousedown", clickInfo);
+        // container.addEventListener("contextmenu", contextHadler);
+
+        function moveInfo(e){
+            let coordinates = document.getElementById("coordinates");
+            coordinates.innerHTML = `X = , Y = `;
         }
+
+        function clickInfo(e){
+            let mouseInfo = document.getElementById("mouseInfo");
+            mouseInfo.innerText = e.button;
+        }
+        // let button = document.getElementById("button");
+        // button.addEventListener("mousedown", clickHandler, false)
+        // button.addEventListener("contextmenu", contextHadler);
+        // function clickHandler(event) {
+        //     console.log(event.button);
+        
+        // }
         function contextHadler(event) {
             event.preventDefault();
         }
