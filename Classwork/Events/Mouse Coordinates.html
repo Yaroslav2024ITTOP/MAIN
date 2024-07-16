@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mouse Coordinates</title>
+    <style>
+        #container{
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+    
 </head>
 <body>
-    
+    <div id="container">
+
+    </div>
+    <input type="button" id="button" value="Click"/>
+    <script>
+        let button = document.getElementById("button");
+        button.addEventListener("mouseup", clickHandler, false)
+        function clickHandler(event) {
+            console.log(event.button);
+
+        }
+    </script>
 </body>
 </html>
