@@ -18,12 +18,10 @@
         <p id="coordinates"></p>
         <p id="mouseinfo"></p>
     </div>
-    <!-- <input type="button" id="button" value="Click"/> -->
     <script>
         let container = document.getElementById("container");
         container.addEventListener("mousemove", moveInfo);
         container.addEventListener("mousedown", clickInfo);
-        // container.addEventListener("contextmenu", contextHadler);
 
         function moveInfo(e){
             let coordinates = document.getElementById("coordinates");
@@ -34,13 +32,7 @@
             let mouseInfo = document.getElementById("mouseInfo");
             mouseinfo.innerText = e.button;
         }
-        // let button = document.getElementById("button");
-        // button.addEventListener("mousedown", clickHandler, false)
-        // button.addEventListener("contextmenu", contextHadler);
-        // function clickHandler(event) {
-        //     console.log(event.button);
         
-        // }
         function contextHadler(event) {
             event.preventDefault();
         }
