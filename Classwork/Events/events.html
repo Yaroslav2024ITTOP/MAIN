@@ -38,8 +38,9 @@
     function textClickHandler() {
         paragraph.style.fontSize = "20px";
     }
-    function textClickHandler2() {
-        alert("2nd click handler");
+    function textClickHandler2(event) {
+        // alert("2nd click handler");
+        paragraph.innerHTML += '${event.clientX}, ${event.clientY}';
     }
     </script>
 
