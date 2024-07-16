@@ -6,13 +6,18 @@
     <title>Events Practice</title>
 </head>
 <body>
-    <div id="container" onmouseover= "mouseOverHandler()" onmouseout= "this.style.color='black'"></div>
+    <div id="container" onmouseover= "mouseOverHandler()" onmouseout= "this.style.color='black'">
+        <p id="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam magni et mollitia, 
+            consectetur assumenda totam facilis dolorum doloremque deleniti sapiente laborum similique autem. 
+            Explicabo vitae suscipit facere cupiditate, eaque accusamus?
+        </p>
+    </div>
     <input type="button" value="Click me" onclick="clickHandler()" >
     
     <script>
        let div = document.getElementById("container");
-       div.innerHTML = "<p>wianddw</p>";
-       div.innerText = "wdawd2222";
+    //    div.innerHTML = "<p>wianddw</p>";
+    //    div.innerText = "wdawd2222";
        div.style.backgroundColor ="yellow";
        div.style.padding = "5px";
        div.style.width = "100%";
@@ -26,6 +31,13 @@
     function clickHandler() {
         div.style.backgroundColor = "pink"
     }
+    let paragraph = document.getElementById("text");
+    paragraph.addEventListener("click", textClickHandler, false);
+
+    function textClickHandler() {
+        paragraph.style.fontSize = "20px";
+    }
     </script>
+
 </body>
 </html>
