@@ -3,9 +3,7 @@ body {
     font-family: sans-serif;
     padding: 0 1.5em;
     background-color: whitesmoke;
-    background-image: url(dz82.png);
-    background-repeat: no-repeat;
-    background-position-x: 750px;}
+}
 h3 {
     font-size: 1.4em;
     margin-top: 2.1em;
@@ -27,7 +25,7 @@ input[type="text"]{
 }
 input[type="text"]:valid {
     border: 2px solid #42ae4a;
-    background-image:url("icons_hw_module_10/valid.png");
+    background-image:url("https://raw.githubusercontent.com/Yaroslav2024ITTOP/MAIN/main/HomeWork/valid.png");
     padding-right: .6em;
     background-origin: content-box;
 
@@ -35,7 +33,7 @@ input[type="text"]:valid {
 
 input[type="text"]:invalid{
     border: 2px solid #e74c6c;
-    background-image:url("icons_hw_module_10/invalid.png");
+    background-image:url("https://raw.githubusercontent.com/Yaroslav2024ITTOP/MAIN/main/HomeWork/invalid.png");
     padding-right: .6em;
     background-origin: content-box;
 }
