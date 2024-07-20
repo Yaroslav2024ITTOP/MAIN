@@ -31,13 +31,10 @@
         .h4 {
             float: unset;
         }
-
-        main {
-            padding: 5%;
-        }
         .section-left {
             display: block;
             padding-right: 1%;
+            padding-left: 5%;
             font-size: larger;
             width: 45%;
             margin-right: 2%;
@@ -56,6 +53,7 @@
         .section-right {
             display: block;
             padding-right: 5%;
+            padding-left: 5%;
             font-size: larger;
             float: right;
             text-align: justify;
@@ -89,13 +87,15 @@
 
         .container1 {
             float: inline-start;
+            margin-left: 5%;
             border-top-right-radius: 25px;
             border: 2px solid rgb(161, 114, 96);
             height: 160px;
             width: 270px;
             background-color: rgb(255, 104, 37);
-            margin-right: 4%;
+            margin-right: 5%;
             margin-bottom: 8%;
+            
         }
         .container2 {
             float: inline-start;
@@ -114,7 +114,7 @@
             height: 160px;
             width: 270px;
             background-color: rgb(28, 61, 137);
-            margin-right: 4%;
+            margin-right: 5%;
             margin-bottom: 8%;
         }
         .container4 {
@@ -124,12 +124,12 @@
             height: 160px;
             width: 270px;
             background-color: rgb(90, 16, 159);
-            margin-right: 4%;
+            margin-right: 5%;
             margin-bottom: 8%;
 
         }
         .container5 {
-            padding: 0;
+            margin-right: auto;
             float: inline-start;
             border-top-right-radius: 25px;
             border: 2px solid rgb(161, 114, 96);
@@ -172,9 +172,27 @@
         .div2 {
             margin-top: 5rem;
         }
-        /* footer {
+        footer {
+            clear:left;
+            display:block;
+            background-color:green;
             
-        } */
+        }
+        .footer1 {
+            background-color:green;
+        }
+        .list {
+            display:block;
+            float:left;
+            padding-right: 20%; 
+            padding-left: 5%;
+                  
+        }
+        .list1 {
+            list-style-type: none;
+            padding-left: 0px;
+        }
+        
     </style>
 </head>
 
@@ -266,11 +284,36 @@
                     <span class="p4">$ 27.99</span>
                 </div>
             </div>
-            
         </section>
+
     </main>
     <footer>
+        <div class="footer1">
         <hr/>
-        jhgvhj
+        <div class="list"> 
+            <h4 >Our courses</h4>
+            <ul class="list1">
+                <li>Элемент списка</li>
+                <li>Элемент списка</li>
+                <li>Элемент списка</li>
+            </ul>
+        </div>
+        <div class="list"> 
+            <h4>Our courses</h4>
+            <ul class="list1">
+                <li>Элемент списка</li>
+                <li>Элемент списка</li>
+                <li>Элемент списка</li>
+            </ul>
+        </div>
+        <div class="list"> 
+            <h4>Our courses</h4>
+            <ul class="list1">
+                <li>Элемент списка</li>
+                <li>Элемент списка</li>
+                <li>Элемент списка</li>
+            </ul>
+        </div>
+    </div>
     </footer>
 </body>
