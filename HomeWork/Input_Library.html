@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form practice</title>
+    <header>
+        
+    </header>
+</head>
+<body>
+    <form action="search" method="post">
+        <ul style="list-style: none;">
+            <li>
+                <label for="name">Введите имя: </lebel>
+                <input type="text" id="username" name="username"/>
+            </li>
+            <li>
+                <label for="password">Введите пароль: </lebel>
+                <input type="text" id="password" name="password"/>
+            </li>
+            <li>
+                <p>Пол: </p>
+                <label for="male">мужской</label>
+                <input type="radio" id="male" value="male" name="sex"/>
+            </li>
+            <li>
+                <label for="formale">женский</label>
+                <input type="radio" id="formale" value="formale" name="sex"/>
+            </li>
+            <li>
+                <input type="checkbox" name="" id="checkbox"/>
+                <label for="my-checkbox">Запомнить</lebel>
+
+            </li>
+            <li>
+                <input type="submit"/>
+            </li>
+            <li>
+                <input type="reset" id="reset"/>
+            </li>
+            <li>
+                <input  type="tel">
+            </li>
+        </ul>
+
+    </form>
+    <form action="" method="get">
+        <li>
+            <label for="my-select">Choose option(s):</label>
+            <select name="my-select" id="my-select" multiple>
+            <option value="">option 1</option>
+            <option value="" selected>option 2</option>
+            </select>
+        </li>
+        <li>
+            <label for="comments">Enter your comments:</label>
+            <textarea name="comments" id="comments"></textarea>
+        </li>
+    </form>
+    <form action="/action_page.php">
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+        <input type="submit">
+      </form>
+
+    <fieldset>
+        <legend>Legend of my fieldset</legend>
+        <input list="lenguages">
+        <datalist id="lenguages">
+            <option value="english"></option>
+            <option value="russian"></option>
+        </datalist>
+    </fieldset>
+    <form action="/action_page.php">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+          <option value="Edge">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+        <input type="submit">
+      </form>
+</body>
+</html>
