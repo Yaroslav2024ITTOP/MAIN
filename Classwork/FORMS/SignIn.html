@@ -4,10 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-weight: bold;
+        }
+        form {
+            width: 65%;
+            margin: auto;
+            padding: 20px;
+            background-color: beige;
+        }
+        input {
+            width: 100%;
+
+        }
+        #login, #password, #signIn {
+            font-weight: normal;
+        }
+        #signIn {
+            font-weight: normal;
+        }
+       
+    </style>
+    <script>
+        window.addEventListener("load", () => {
+            let signIn = getElementById("#signIn");
+            signInBtn.addEventListener("click", handleSignIn);
+
+            function handleSignIn(event) {
+                let name = document.querySelector("#login").value;
+                let checkbox = document.querySelector("#remember");
+                let rememberStatus = checkbox.checked ? "запомнил" : "не запомнил";
+            
+            }
+
+        })
+    </script>
 </head>
 <body>
     <form action="" method="get">
+        <div>
+            <label for="login">Your login: </br>
+                    <input type="text" id="login"/>
+            </label>
+        </div>  
+        <div>
+            <label for="password" id="password">Your password:</br>
+                    <input type="text" id="password"/>
+            </label>
+        </div>  
+        <div>
+            <label for="remember">Remember me
+                <input type="checkbox" name="remember"/>
+            </label>
+        </div> 
+        <input type="button" value="Sign in" id="signIn"/>
         
+          
     </form>
 </body>
 </html>
