@@ -14,28 +14,33 @@
         margin: auto;
         padding: 20px;
         background-color: beige;
+        
     }
     input {
-        width: 45%;
+        width: 200%;
     }
     #email, #login, #password, #rpassword {
         font-weight: normal;
-        margin: 1%;
-        
-        
-        
+        margin-top: 1%;
+        margin-bottom: 1%;
+    
     }
     #signUp {
         width: 100%;
         font-weight: normal;
     }
     div {
-        display: inline-flex;
+        display: inline-flex;  
     }
     .div1 {
-        width: 45%;
-        /* margin: 5%; */
+        width: 50%;
+        justify-content: space-between;
         
+        
+    }
+    .div2 {
+        width: 100%;
+        justify-content: space-between;        
     }
    </style>
 </head>
@@ -53,6 +58,7 @@
                 </label>
             </div>
     </div>
+    <div class="div2">
         <div>
             <label for="password" id="password">Your password:</br>
                 <input type="text" id="password"/>
@@ -63,9 +69,9 @@
                 <input type="text" id="rpassword"/>
             </label>
         </div>
+    </div>
         </br> 
-        <input type="button" value="Sign up" id="signUp"/>
-            
+        <input type="button" value="Sign up" id="signUp"/>     
     </form>
 </body>
 </html>
