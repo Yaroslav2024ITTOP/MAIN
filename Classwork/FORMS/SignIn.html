@@ -29,8 +29,8 @@
     </style>
     <script>
         window.addEventListener("load", () => {
-            let signIn = getElementById("#signIn");
-            signInBtn.addEventListener("click", handleSignIn);
+            let signIn = document.getElementById("signIn");
+            signIn.addEventListener("click", handleSignIn);
 
             function handleSignIn(event) {
                 let name = document.querySelector("#login").value;
@@ -41,9 +41,8 @@
                 } else {
                     rememberStatus = "не запомнил";
                 }
-                alert("Привет, ${name}! Я тебя ${rememberStatus}.");         
+                alert(`Привет, ${name}! Я тебя ${rememberStatus}.`);         
             }
-
         })
     </script>
 </head>
@@ -61,7 +60,7 @@
         </div>  
         <div>
             <label for="remember">Remember me
-                <input type="checkbox" name="remember"/>
+                <input type="checkbox" name="remember" id="remember"/>
             </label>
         </div> 
         <input type="button" value="Sign in" id="signIn"/>

@@ -23,28 +23,36 @@
         margin: 1%;
         
         
+        
     }
     #signUp {
         width: 100%;
         font-weight: normal;
     }
     div {
-        display: inline;
+        display: inline-flex;
+    }
+    .div1 {
+        width: 45%;
+        /* margin: 5%; */
+        
     }
    </style>
 </head>
 <body>
     <form action="" method="post">
-        <div>
-            <label for="email" id="email">Your email: </br>
-                <input type="email" id="email"/>
-            </label>
-        </div>  
-        <div>
-            <label for="login" id="login">Your login: </br>
-                <input type="text" id="login"/>
-            </label>
-        </div>
+        <div class="div1">
+            <div>
+                <label for="email" id="email">Your email: </br>
+                    <input type="email" id="email"/>
+                </label>
+            </div>  
+            <div>
+                <label for="login" id="login">Your login: </br>
+                    <input type="text" id="login"/>
+                </label>
+            </div>
+    </div>
         <div>
             <label for="password" id="password">Your password:</br>
                 <input type="text" id="password"/>
