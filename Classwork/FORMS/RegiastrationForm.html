@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <style>
+    *{
+        box-sizing: border-box;
+        font-weight: bold;
+    }
+    form {
+        width: 65%;
+        margin: auto;
+        padding: 20px;
+        background-color: beige;
+    }
+    input {
+        width: 45%;
+
+    }
+    #email, #login, #password, #rpassword {
+        font-weight: normal;
+        display:inline-block;
+        
+
+
+    }
+    #signUp {
+        font-weight: normal;
+    }
+   </style>
 </head>
 <body>
     <form action="" method="post">
-
+        <div>
+            <label for="email" id="email">Your email: </br>
+                <input type="email" id="email"/>
+            </label>
+        </div>  
+        <div>
+            <label for="login" id="login">Your login: </br>
+                <input type="text" id="login"/>
+            </label>
+        </div>
+        <div>
+            <label for="password" id="password">Your password:</br>
+                <input type="text" id="password"/>
+            </label>
+        </div>  
+        <div>
+            <label for="rpassword" id="rpassword">Repeat password:</br>
+                <input type="text" id="rpassword"/>
+            </label>
+        </div>
+        </br> 
+        <input type="button" value="Sign up" id="signUp"/>
+            
     </form>
 </body>
 </html>

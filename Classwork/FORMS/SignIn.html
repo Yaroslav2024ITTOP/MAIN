@@ -34,9 +34,14 @@
 
             function handleSignIn(event) {
                 let name = document.querySelector("#login").value;
-                let checkbox = document.querySelector("#remember");
-                let rememberStatus = checkbox.checked ? "запомнил" : "не запомнил";
-            
+                let checkbox = document.getElementById("remember");
+                let rememberStatus; 
+                if (checkbox.checked) {
+                    rememberStatus = "Запомнил";
+                } else {
+                    rememberStatus = "не запомнил";
+                }
+                alert('Привет, ${name}! Я тебя ${rememberStatus}.');         
             }
 
         })
