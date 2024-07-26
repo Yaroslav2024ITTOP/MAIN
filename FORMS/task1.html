@@ -20,6 +20,7 @@
 </head>
 <body>
     <form action="" method="post">
+        <div id="container"></div>
         <div>
             <div>Name</div>
 
@@ -46,7 +47,8 @@
         let form = document.forms[0];
         form.addEventListener("submit", saveMessage);
 
-        function saveMessage() {
+        function saveMessage(event) {
+            event.preventDefault();
             let userName = document.getElementById("name").value;
             let message = document.getElementById("message").value;
             
@@ -56,7 +58,8 @@
             let body = document.createElement("div");
             body.innerHTML = message;
 
-            document.body.appendChild(header);
+            document.getElementById("container").appendChild(header);
+            document.getElementById("container").appendChild(body);
 
         }
     </script>
