@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+    *{
+        box-sizing: border-box;
+        font-weight: bold;
+    }
+    form {
+        width: 65%;
+        margin: auto;
+        padding: 20px;
+        background-color: beige;
+        
+    }
+    input {
+        width: 200%;
+    }
+    #email, #login, #password, #rpassword {
+        font-weight: normal;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    
+    }
+    #signUp {
+        width: 100%;
+        font-weight: normal;
+    }
+    div {
+        display: inline-flex;  
+    }
+    .div1 {
+        width: 50%;
+        justify-content: space-between;
+        
+        
+    }
+    .div2 {
+        width: 100%;
+        justify-content: space-between;        
+    }
+   </style>
+</head>
+<body>
+    <form action="" method="post">
+        <div class="div1">
+            <div>
+                <label for="email" id="email">Your email: </br>
+                    <input type="email" id="email"/>
+                </label>
+            </div>  
+            <div>
+                <label for="login" id="login">Your login: </br>
+                    <input type="text" id="login"/>
+                </label>
+            </div>
+    </div>
+    <div class="div2">
+        <div>
+            <label for="password" id="password">Your password:</br>
+                <input type="text" id="password"/>
+            </label>
+        </div>  
+        <div>
+            <label for="rpassword" id="rpassword">Repeat password:</br>
+                <input type="text" id="rpassword"/>
+            </label>
+        </div>
+    </div>
+        </br> 
+        <input type="button" value="Sign up" id="signUp"/>     
+    </form>
+</body>
+</html>
