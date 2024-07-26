@@ -16,4 +16,11 @@
     </form>
         
 </body>
+<script>
+    document.forms[0].addEventListener("submit", submitHandler);
+    function submitHandler(e){
+        e.preventDefaut();
+        console.log(form.elements);
+    }
+</script>
 </html>
