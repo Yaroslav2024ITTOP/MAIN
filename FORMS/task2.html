@@ -9,18 +9,57 @@
     <form action="" method="post">
         <p>1&#41; How many letters are here in the word "Hello"?</p>
         <div>
-            <input type="radio" name="options" id="5"/>
-            <label for="5">5</label>
+            <input type="radio" name="options1" id="1"/>
+            <label for="options1">2</label>
         </div>
-        <input type="submit" value="text" id="submit"/>
+        <div>
+            <input type="radio" name="options3" id="3"/>
+            <label for="options3">3</label>
+        </div>
+        <div>
+            <input type="radio" name="options" id="option2"/>
+            <label for="options2">5</label>
+        </div>
+        <input type="submit" value="Next" id="submit"/>
     </form>
         
 </body>
 <script>
     document.forms[0].addEventListener("submit", submitHandler);
+    let sum = 0;
+    let count = 0;
+
     function submitHandler(e){
         e.preventDefaut();
-        console.log(form.elements);
+        count++;
+
+        switch (count) {
+            case 1:
+                if (form.elements[1].checked)
+                    sum++;
+                document.querySelector("p").innerText = '1) How many letters are here in the word "Hello"?';
+                break;
+            case 2:
+                if (form.elements[0].checked)
+                    sum++;
+                    document.querySelector("p").innerText = '2) How many letters are here in the word "Js"?';
+                break;
+            case 3:
+                if (form.elements[1].checked)
+                    sum++;
+            break;
+            default:
+                alert(sum);
+                break;     
+        }
+        if (count === 2){
+            document.getElementById("submit").value = "Finish";
+
+        }
+
+        console.log(e.target.elements[0].checked);
+        console.log(e.target.elements[1].checked);
+        console.log(sum);
     }
 </script>
 </html>
