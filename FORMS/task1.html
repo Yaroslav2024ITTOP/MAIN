@@ -8,9 +8,13 @@
         * {
             box-sizing: border-box;
         }
-        div div {
+        .bordered {
             border: 1px solid black;
-            padding: 20px 15px;
+            padding: 7px 15px;
+        }
+        .post {
+            margin:20px;
+
         }
         input, textarea {
             width: 100%;
@@ -19,9 +23,8 @@
     </style>
 </head>
 <body>
-    <form action="" method="post">
-        <div id="container"></div>
-        <div>
+    <div id="container"></div>   
+    <!-- <div>
             <div>Name</div>
 
             <div>
@@ -31,7 +34,8 @@
                 maiores quos dolor dolorum! Alias harum neque 
                 voluptatibus vitae. Iure.
             </div>
-        </div>
+        </div> -->
+    <form action="" method="post">
         Add new messages:
         <div>
             <input type="text" name="name" id="name" />
@@ -39,9 +43,8 @@
         <div>
             <textarea name="message" id="message"></textarea>
         </div>
-        <div>
-            <input type="submit" value="Send" />
-        </div>
+        <input type="submit" value="Send" />
+        
     </form>
     <script>
         let form = document.forms[0];
@@ -52,8 +55,16 @@
             let message = document.getElementById("message").value;
             let header = document.createElement("div");
             header.innerHTML = userName;
+            header.className = "bordered";
             let body = document.createElement("div");
             body.innerHTML = message;
+            body.className = "bordered";
+            body.style.borderTopStyle = "none";
+
+            let post = document.createElement("div");
+            post.className = "post";
+            post.appendChild(header);
+            post.appendChild(body);
             document.getElementById("container").appendChild(header);
             document.getElementById("container").appendChild(body);
             form.reset();
