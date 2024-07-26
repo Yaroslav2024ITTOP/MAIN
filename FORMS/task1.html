@@ -46,21 +46,17 @@
     <script>
         let form = document.forms[0];
         form.addEventListener("submit", saveMessage);
-
         function saveMessage(event) {
             event.preventDefault();
             let userName = document.getElementById("name").value;
             let message = document.getElementById("message").value;
-            
             let header = document.createElement("div");
             header.innerHTML = userName;
-
             let body = document.createElement("div");
             body.innerHTML = message;
-
             document.getElementById("container").appendChild(header);
             document.getElementById("container").appendChild(body);
-
+            form.reset();
         }
     </script>
 </body>
