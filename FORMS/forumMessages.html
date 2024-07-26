@@ -38,7 +38,9 @@
     <script>
         let form = document.forms[0];
         form.addEventListener("submit", saveMessage);
+
         function saveMessage(event) {
+            let now = luxon.DateTime.now().toFormat("HH:mm:ss | dd.MM.yyyy");
             event.preventDefault();
             let userName = document.getElementById("name").value;
             let message = document.getElementById("message").value;
@@ -51,8 +53,7 @@
             body.style.borderTopStyle = "none";
 
             let date = document.createElement("span");
-            let format = new Intl.DateTimeFormat("RU", {dateStyle: "short"});
-            date.innerText = format.format(new Date());
+            date.innerHTML = now;
             date.style.float = "right";
             header.appendChild(date);
             
