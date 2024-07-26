@@ -52,7 +52,6 @@
 
             let date = document.createElement("span");
             let format = new Intl.DateTimeFormat("RU", {dateStyle: "short"});
-            
             date.innerText = format.format(new Date());
             date.style.float = "right";
             header.appendChild(date);
