@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div div {
+            border: 1px solid black;
+            padding: 20px 15px;
+        }
+        input, textarea {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <div>
+            <div>Name</div>
+
+            <div>
+                Lorem ipsum, dolor sit amet consectetur 
+                adipisicing elit. Eaque, sequi! Accusantium eos, 
+                dolore ex eum, ut cumque veritatis incidunt nemo 
+                maiores quos dolor dolorum! Alias harum neque 
+                voluptatibus vitae. Iure.
+            </div>
+        </div>
+        Add new messages:
+        <div>
+            <input type="text" name="name" id="name" />
+        </div>
+        <div>
+            <textarea name="message" id="message"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Send" />
+        </div>
+    </form>
+    <script>
+        let form = document.forms[0];
+        form.addEventListener("submit", saveMessage);
+
+        function saveMessage() {
+            let userName = document.getElementById("name").value;
+            let message = document.getElementById("message").value;
+            
+            let header = document.createElement("div");
+            header.innerHTML = userName;
+
+            let body = document.createElement("div");
+            body.innerHTML = message;
+
+            document.body.appendChild(header);
+
+        }
+    </script>
+</body>
+</html>
