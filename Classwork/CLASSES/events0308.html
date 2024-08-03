@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <input type="button" id="2" value="click">
+    <div id="1">
+
+    </div>
+    <script>
+        let div = document.getElementById("1");
+        div.innerHTML = '<a href="">events</a>';
+        div.style.backgroundColor = 'yellow';
+        div.style.paddingTop = "20px";
+        let button = document.getElementById("2");
+        button.addEventListener("click", clickHandler);
+        button.addEventListener("mouseover", mouseOverHandler);
+        button.addEventListener("mouseout", mouseOutHandler);
+        function mouseOutHandler(){
+            button.style.color = "black";
+            
+        }function mouseOverHandler(){
+            button.style.color = "green";
+        }
+        
+
+
+        function clickHandler(){
+            // div.innerHTML = "<p>ajndfaiwnfna</p>";
+            let p = document.createElement("p");
+            p.innerText = "qweasdzxc";
+            div.appendChild(p);
+        }
+
+    </script>
+    
+</body>
+</html>

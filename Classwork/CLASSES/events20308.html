@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="text">
+            <input type="submit" id="submit">
+    </form>
+    
+    <script>
+        let form = document.forms[0];
+        form.addEventListener("submit", submitEvent);
+        function submitEvent(event){
+            event.preventDefault();
+            console.log(event);
+            let p = document.createElement("p");
+            p.innerText = document.getElementById("text").value;
+            document.body.appendChild(p);
+        }
+        
+
+    </script>
+</body>
+</html>
