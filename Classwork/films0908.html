@@ -42,11 +42,18 @@
             width:200px;
             height: 30px;
         }
+        .hide {
+            margin-top: 30px;
+            display:none;
+        }
     </style>
     <script>
+        document.getElementById('button').onclick = function() {
+                document.getElementById('hide').hidden = true;
+            }
         function loadList() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onload = function() {}
+            var xhttp = new XMLHttpRequest();
+            xhttp.onload = function() {}
             document.getElementById("demo").innerHTML = this.responseText;
 
         };
@@ -87,6 +94,7 @@
             </li>
         <input type="submit" onclick="loadList()" value="Search" id="button"/>
     </form>
+    <h1 id="hide">Films:</h1>
     <div class="demo">
         <div id="1"></div>
         <div id="2"></div>
