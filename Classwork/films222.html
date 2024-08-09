@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- http://www.omdbapi.com/?i=tt3896198&apikey=2758e4b0 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -59,6 +58,17 @@
             font-weight: bold;
             border-radius: 5px;
         }
+        #film-info{
+            display: block;
+            border: 1px solid rgb(91, 90, 90);
+            width: 400px;
+            height: 400px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 5px;
+        }
         button{
            background-color: rgb(151, 149, 149);
            float: right;
@@ -107,15 +117,14 @@
 
     let request = new XMLHttpRequest();
      
-    request.open("GET","http://www.omdbapi.com/?i=tt3896198&apikey=2758e4b0");
+    request.open("GET","http://www.omdbapi.com/?apikey=3278a82c&s=hello&type=movie");
     request.send();
 
     request.onload = function(e){
         let response = request.response;       
         let parsedResponse =JSON.parse(response);
-        console.log(parsedResponse.Search);
+      console.log(parsedResponse.Search);
         let films = parsedResponse.Search;
-    }
 
         for (let film of films){
             
@@ -132,21 +141,24 @@
           
                      
             document.getElementById("container-films").appendChild(div).appendChild(button);   
-        }
+
     button.onclick = function(e){
         e.preventDefault();
         let request1 = new XMLHttpRequest();
-        request1.open("GET","http://www.omdbapi.com/?i=tt3896198&apikey=2758e4b0");
-        request.send();
-        request.onload = function(e){
+        request1.open("GET","http://www.omdbapi.com/?apikey=3278a82c&i=tt1285016");
+        request1.send();
+        request1.onload = function(e){
+            let response1 = request1.response;       
+            let info =JSON.parse(response1);
             let div2 = document.createElement("div");
-            div2.innerHTML = `<img class="image" src="${film.Poster}"/><p>${film.Type}</p><p><b>${film.Title}</b></p><p>${film.Year}</p>`;
-            document.getElementById("container-films").appendChild(div).appendChild(button);  
-
-
+            div2.innerHTML = `<img class="image" src="${info.Poster}"/><p>Title: ${info.Title}</p>
+            <p>${info.Released}</p><p>${info.Genre}</p><p>${info.Country}</p><p>${info.Director}</p>
+            <p>${info.Writer}</p><p>${info.Actors}</p><p>${info.Awards}</p>`;
+            document.getElementById("film-info").appendChild(div2);  
         }
     }
-    
+}
+    }
    </script>
    
     
