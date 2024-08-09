@@ -119,8 +119,9 @@
      
     request.open("GET",`http://www.omdbapi.com/?apikey=3278a82c&s=${title.value}&type=${type.value}`);
     request.send();
-
-    request.onload = function(e){
+    document.forms[0].onsubmit = function(e){
+        e.preventDefault();
+        request.onload = function(e){
         let response = request.response;       
         let parsedResponse =JSON.parse(response);
       console.log(parsedResponse.Search);
@@ -130,22 +131,12 @@
             
             let div = document.createElement("div");
             div.innerHTML = `<img class="image" src="${film.Poster}"/><p>${film.Type}</p><p><b>${film.Title}</b></p><p>${film.Year}</p>`;
-
-            // let image = document.createElement("div");
-            // image.className = "image";
-            // image.innerHTML = `<img src="${film.Poster}"/>`;
-
             let button = document.createElement("button");
-             button.innerHTML = "Details";
-           // document.getElementById("container-films").appendChild(div).appendChild(image).appendChild(button);
-          
-                     
+            button.innerHTML = "Details";
             document.getElementById("container-films").appendChild(div).appendChild(button);   
 
-    document.forms[0].onsubmit = function(e){
-        e.preventDefault();
         let request1 = new XMLHttpRequest();
-        request1.open("GET","http://www.omdbapi.com/?apikey=3278a82c&i=tt1285016");
+        request1.open("GET",`http://www.omdbapi.com/?apikey=3278a82c&s=${title.value}&type=${type.value}`);
         request1.send();
         request1.onload = function(e){
             let response1 = request1.response;       
