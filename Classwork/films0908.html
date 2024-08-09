@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films</title>
+    <style>
+        *{
+            background-color: rgb(251, 242, 233);
+            box-sizing: border-box;
+            font-weight: bold;
+        }
+        h1{
+            text-align: center;            
+        }
+        form {
+            width: 400px;
+            height: 200px;
+            margin-left: 730px;
+            border: 1px solid black;
+            border-radius: 5px;    
+        }
+        li{
+            margin-bottom: 20px;
+        }
+        #button{
+            border-radius: 5px;
+            width:325px;
+            height: 50px;
+            text-align: center;
+            background-color: rgb(225, 225, 225);
+        }
+        #title{
+            border-radius: 5px;
+            margin-left: 100px;
+            width:200px;
+            height: 30px;
+        }
+        #type{
+            border-radius: 5px;
+            margin-left: 100px;
+            width:200px;
+            height: 30px;
+        }
+    </style>
+    <script>
+        function loadList() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {}
+            document.getElementById("demo").innerHTML = this.responseText;
+
+            
+    
+        };
+        xhttp.open("GET", "http://img.omdbapi.com/?apikey=[yourkey]&", true);
+        xhttp.send();
+        
+
+        // let form = document.getElementById("form");
+        // form.addEventListener("submit", search);
+        // function search(){
+        //     userDiv.onclick = function () {
+        //         document.getElementById("").innerHTML =
+        //             `<div>
+                            
+        //             </div>`;
+        //         }
+
+        // }
+
+
+    </script>
+</head>
+<body>
+    <h1>Search:</h1>
+    <form action="" method="get" id="form">
+        <ul style="list-style: none;">
+            <li>
+                <label for="title">Title:</lebel>
+                <input type="text" id="title" name="title"/>
+            </li>
+            <li>
+                <label for="type">Type:</label>
+                <select name="type" id="type">
+                    <option value="" selected id="movie">Movie</option>
+                    <option value="" id="series">Series</option>
+                    <option value="" id="episode">Episode</option>
+                </select>
+            </li>
+        <input type="submit" onclick="loadList()" value="Search" id="button"/>
+        <div id="demo"></div>
+    </form>
+</body>
+</html>
