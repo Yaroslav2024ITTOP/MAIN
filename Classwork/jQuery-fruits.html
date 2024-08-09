@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    h3{
+        text-align: center;
+    }
+    .red{
+        background-color: red;
+    }
+    .green{
+        background-color: green;
+    }
+    .orange{
+        background-color: rgb(221, 148, 13);
+    }
+    .yellow{
+        background-color: rgb(193, 193, 10);
+    }
+    div div{
+        display: inline-block;
+        margin: 10px;
+        padding: 15px;
+        width: 90px;
+         
+    }
+    div div,button{
+        border: 1px solid rgb(74, 51, 19);
+        text-align: center;
+        color: white;
+    }
+    .shadow{
+        box-shadow: 0px 0px 4px 5px grey;
+    }
+    button{
+        width: 60px;
+        height: 30px;
+        margin: 5px;
+    }
+        
+</style>
+    <script>
+       $(function(){
+        
+        $("button.red").click(function(){           
+            $(".red").addClass("shadow");
+            $(".green").removeClass("shadow");
+            $(".orange").removeClass("shadow");
+            $(".yellow").removeClass("shadow");
+        });
+        $("button.green").click(function(){            
+            $(".green").addClass("shadow");
+            $(".red").removeClass("shadow");
+            $(".orange").removeClass("shadow");
+            $(".yellow").removeClass("shadow");
+        });
+        $("button.orange").click(function(){            
+            $(".orange").addClass("shadow");
+            $(".green").removeClass("shadow");
+            $(".red").removeClass("shadow");
+            $(".yellow").removeClass("shadow");
+        });
+        $("button.yellow").click(function(){              
+            $(".yellow").addClass("shadow");
+            $(".green").removeClass("shadow");
+            $(".orange").removeClass("shadow");
+            $(".red").removeClass("shadow");            
+        });
+        });
+   
+      </script>
+
+</head>
+<body>
+
+    <div>
+        <b>Select colour:</b>
+        <button type="button" class="red">red</button>
+        <button type="button" class="green">green</button>
+        <button type="button" class="orange">orange</button>
+        <button type="button" class="yellow">yellow</button>
+    </div>
+    <hr/>
+    <div>
+        <h3>Fruits:</h3>
+        <div class="red">apple</div>
+        <div class="green">pear</div>
+        <div class="orange">orange</div>
+        <div class="red">mango</div>
+        <div class="orange">mandarin</div>
+        <div class="yellow">pineapple</div>
+        <div class="green">avocado</div>
+        <div class="red">red peper</div>
+        <div class="green">green peper</div>
+    </div>
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
