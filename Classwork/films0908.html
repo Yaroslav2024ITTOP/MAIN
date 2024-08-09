@@ -44,12 +44,12 @@
         }
         .hide {
             margin-top: 30px;
-            display:none;
+            opacity: 0;
         }
     </style>
     <script>
         document.getElementById('button').onclick = function() {
-                document.getElementById('hide').hidden = true;
+            document.getElementById('hide').style.opacity:100;
             }
         function loadList() {
             var xhttp = new XMLHttpRequest();
@@ -94,7 +94,7 @@
             </li>
         <input type="submit" onclick="loadList()" value="Search" id="button"/>
     </form>
-    <h1 id="hide">Films:</h1>
+    <h1 type:"hidden", id="hide">Films:</h1>
     <div class="demo">
         <div id="1"></div>
         <div id="2"></div>
