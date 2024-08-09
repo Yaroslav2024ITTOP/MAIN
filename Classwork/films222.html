@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    http://www.omdbapi.com/?i=tt3896198&apikey=2758e4b0
+    <!-- http://www.omdbapi.com/?i=tt3896198&apikey=2758e4b0 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -107,7 +107,7 @@
 
     let request = new XMLHttpRequest();
      
-    request.open("GET","http://www.omdbapi.com/?apikey=3278a82c&s=hello&type=movie");
+    request.open("GET","http://www.omdbapi.com/?i=tt3896198&apikey=2758e4b0");
     request.send();
 
     request.onload = function(e){
@@ -136,7 +136,7 @@
     button.onclick = function(e){
         e.preventDefault();
         let request1 = new XMLHttpRequest();
-        request1.open("GET","http://www.omdbapi.com/?apikey=3278a82c&i=tt1285016");
+        request1.open("GET","http://www.omdbapi.com/?i=tt3896198&apikey=2758e4b0");
         request.send();
         request.onload = function(e){
             let div2 = document.createElement("div");
