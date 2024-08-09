@@ -57,17 +57,17 @@
         xhttp.send();
         
 
-        // let form = document.getElementById("form");
-        // form.addEventListener("submit", search);
-        // function search(){
-        //     userDiv.onclick = function () {
-        //         document.getElementById("").innerHTML =
-        //             `<div>
+        let form = document.getElementById("form");
+        form.addEventListener("submit", search);
+        function search(){
+            userDiv.onclick = function () {
+                document.getElementById("demo").innerHTML =
+                    `<div>
                             
-        //             </div>`;
-        //         }
+                    </div>`;
+                }
 
-        // }
+        }
 
 
     </script>
@@ -89,7 +89,9 @@
                 </select>
             </li>
         <input type="submit" onclick="loadList()" value="Search" id="button"/>
-        <div id="demo"></div>
+        
+
+        </div>
     </form>
     
 </body>
